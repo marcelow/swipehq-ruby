@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'swipehq-ruby/version'
+require 'swipehq/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "swipehq-ruby"
-  gem.version       = Swipehq::Ruby::VERSION
+  gem.name          = "swipehq"
+  gem.version       = SwipeHQ::VERSION
   gem.authors       = ["Marcelo Wiermann"]
   gem.email         = ["marcelo.wiermann@gmail.com"]
   gem.description   = %q{TODO: Write a gem description}
