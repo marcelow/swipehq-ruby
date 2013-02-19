@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = SwipeHQ::VERSION
   gem.authors       = ["Marcelo Wiermann"]
   gem.email         = ["marcelo.wiermann@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{SwipeHQ for Ruby}
+  gem.summary       = %q{SwipeHQ for Ruby}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
