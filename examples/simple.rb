@@ -1,9 +1,11 @@
 require File.expand_path('../../lib/swipehq', __FILE__)
 
 puts "=== Starting SwipeHQ API test"
-SwipeHQ.api_key = ENV['SWIPEHQ_API_KEY']
-SwipeHQ.merchant_id = ENV['SWIPEHQ_MERCHANT_ID']
-SwipeHQ.callback_url = ENV['SWIPEHQ_CALLBACK_URL']
+SwipeHQ.configure do |config|
+  config.api_key = ENV['SWIPEHQ_API_KEY']
+  config.merchant_id = ENV['SWIPEHQ_MERCHANT_ID']
+  config.callback_url = ENV['SWIPEHQ_CALLBACK_URL']
+end
 
 puts "=== Setting up Callback URL"
 SwipeHQ.set_callback_url
